@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Horizontal Scroll view for categories we can also add list view
+    but we just have 7 elements thats why we use scrollview -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="business"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="entertainment"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="general"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="health"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="science"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sports"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="technology"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:layout_margin="6dp" >
+
+            </Button>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

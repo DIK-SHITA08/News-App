@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                app:cardElevation="8dp
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_detail_title"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="26sp"  >
+
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/img_detail_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="2500dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/not_available"
+                        android:layout_marginTop="8dp"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/text_detail_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple_500"
+                        android:layout_marginTop="6dp"
+                        android:textSize="16dp" >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/text_detail_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp"
+                        android:textSize="16dp" >
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Detail and contetent of news-->
+            <TextView
+                android:id="@+id/text_detail_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="22sp"
+                android:textColor="@color/black" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/black" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
